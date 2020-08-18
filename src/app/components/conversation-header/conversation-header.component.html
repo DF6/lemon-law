@@ -1,6 +1,26 @@
 <div>
-    <button (click)="goBack()">Back</button>
     <button (click)="showHelpTooltip()">Help</button>
     <button (click)="applyLemonLaw()">Lemon Law</button>
-    <span>{{countdownFormatted}}</span>
+</div>
+
+<div class="toolbar" role="banner">
+    <img
+        class="back-arrow conversation-menu-icon"
+        alt="Back"
+        src="../../../assets/keyboard-arrow-left.svg"
+    />
+    <div class="spacer"></div>
+    <img
+        class="help-icon conversation-menu-icon"
+        alt="Help"
+        src="../../../assets/help-icon.svg"
+    />
+    <div class="spacer"></div>
+    <img
+        class="lemon-law-icon conversation-menu-icon"
+        alt="Apply Lemon Law"
+        src="../../../assets/help-icon.svg"
+    />
+    <div class="spacer"></div>
+    <span class="countdown">{{countdownFormatted}}</span>
 </div>

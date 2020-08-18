@@ -1,0 +1,26 @@
+.toolbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    background-color: #f1f1f1;
+    color: #707070;
+    font-weight: 600;
+    padding-right: 1rem;
+
+    .conversation-menu-icon {
+        width: 2.5rem;
+        cursor: pointer;
+    }
+
+    .spacer {
+        flex: 1;
+    }
+
+    .countdown {
+        font-size: 1.5rem;
+    }
+}

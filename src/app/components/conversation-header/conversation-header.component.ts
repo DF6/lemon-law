@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { AppService } from 'src/app/app.service';
 
 @Component({
@@ -8,33 +8,43 @@ import { AppService } from 'src/app/app.service';
 })
 export class ConversationHeaderComponent implements OnInit {
 
-  @Input() countdown: Date;
-  public countdownFormatted: string = '00:00:00';
+  @Output() goBackEvent = new EventEmitter();
+
+  public countdownFormatted: string;
   public timer;
+  public countdown;
 
   constructor(private appService: AppService) { }
 
   ngOnInit(): void {
-    this.timer = setInterval(this.formatDate, 1000);
+    this.countdown = new Date('2020-08-17 03:24:00');
+    this.timer = setInterval(() => {
+      let distance = this.countdown.getTime() - new Date().getTime();
+
+      if (distance < 0) {
+        clearInterval(this.timer);
+        return;
+      }
+  
+      var ms = distance % 1000;
+      distance = (distance - ms) / 1000;
+      this.countdownFormatted = this.appService.addZero(distance % 60);
+      distance = (distance - distance % 60) / 60;
+      this.countdownFormatted = this.appService.addZero(distance % 60) + ':' + this.countdownFormatted;
+      this.countdownFormatted = this.appService.addZero((distance - distance % 60) / 60) + ':' + this.countdownFormatted;
+    }, 1000);
   }
 
-  applyLemonLaw() {}
+  public applyLemonLaw() {
 
-  formatDate() {
-    let distance = this.countdown.getTime() - new Date().getTime();
-
-    if (distance < 0) {
-      clearInterval(this.timer);
-      return;
-    }
-
-    this.countdownFormatted = this.appService.addZero(Math.floor((distance % 1000*60*60*24) / 1000*60*60));
-    this.countdownFormatted += ':' + this.appService.addZero(Math.floor((distance % 1000*60*60) / 1000*60));
-    this.countdownFormatted += ':' + this.appService.addZero(Math.floor((distance % 1000*60) / 1000));
   }
 
-  goBack() {}
+  public goBack() {
+    this.goBackEvent.emit();
+  }
 
-  showHelpTooltip() {}
+  public showHelpTooltip() {
+
+  }
 
 }

@@ -1,27 +1,22 @@
-# LemonLaw
+# Lemon Law #
+
+## ¿Alguna vez has escuchado hablar de la Ley Limón? ##
+
+> -Bien, seré breve. Anoche (¡Eureka!) me di cuenta de lo que necesita el mundo de las citas: una Ley Limón.
+> -¿Una Ley Limón, como la de los coches?
+> -¡Exacto! Desde el momento en que empieza la cita, tienes cinco minutos para decidir si vas a embarcarte en algo más. Y si no te apetece, sin resentimientos; un simple buenas noches, gracias por participar, hasta nunca. ¿Eh? ¿Eh? La Ley Limón, va a ser un éxito. Posiblemente éste es el comienzo...
+
+Todos conocemos la serie que se cita justo aquí. En este mundo sin tiempo, dedicamos el mínimo indispensable a conocer a una persona. ¿Por qué me voy a quedar aquí sentado cuando es evidente que no hay ninguna química? El tiempo es oro. Con esta premisa, y añadiendo la magia de internet... ¡Tenemos Lemon Law!
+
+> -Para tu información, tu pequeña "Ley Limón" simboliza lo más nefasto de esta sociedad sin memoria en la que vivimos.
+
+Pero ah, le añadimos un ingrediente más, el anonimato. Según tus parámetros de búsqueda, te ponemos a hablar cinco minutos en una "mesa virtual" con alguien que puede ser afín a ti... Pero sin información. ¿Y si las velitas románticas virtuales hacen el resto? Si crees que puede ser lo suficientemente interesante, te iremos desbloqueando información sobre la persona: nombre, edad, gustos, y un montón de cosas más, ¡o simplemente pregúntaselo tú mism@!
+
+De esta manera, queremos acercarte más a la persona y no al perfil, que las palabras fluyan... ¡y nada influya!
+
+> -No, te equivocas, es alucinante.
+> -Hacen falta más de cinco minutos para conocer a una persona. Si sigues descartando a la gente tan rápido, te perderás algo interesante.
+
+--------------------------------------------------------------------------------------------------------------------------------
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.9.
-
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
