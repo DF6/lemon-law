@@ -6,14 +6,23 @@
     height: 3rem;
     display: flex;
     align-items: center;
-    background-color: #f1f1f1;
+    background-color: #acaaa2;
     color: #707070;
     font-weight: 600;
-    padding-right: 1rem;
+    padding: 0 1rem;
+
+    .back-arrow {
+        width: 1rem;
+    }
+
+    .help-icon, .lemon-law-icon {
+        width: 2rem;
+    }
 
     .conversation-menu-icon {
-        width: 2.5rem;
+        height: 100%;
         cursor: pointer;
+        outline: none;
     }
 
     .spacer {

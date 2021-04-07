@@ -1,0 +1,23 @@
+<div class="toolbar" role="banner">
+    <img
+        class="back-arrow conversation-menu-icon"
+        alt="{{'back' | translate}}"
+        src="../../../assets/icons/back-arrow.svg"
+        (click)="goBack()"
+    />
+    <div class="spacer"></div>
+    <img
+        class="lemon-law-icon conversation-menu-icon"
+        alt="{{'applyLemonLaw' | translate}}"
+        src="../../../assets/icons/lemon.svg"
+        (click)="applyLemonLaw()"
+    />
+    <div class="spacer"></div>
+    <img
+        class="help-icon conversation-menu-icon"
+        alt="{{'help' | translate}}"
+        src="../../../assets/icons/help-icon.svg"
+        (click)="showHelpTooltip()"
+    />
+    <span class="countdown">{{countdownFormatted}}</span>
+</div>

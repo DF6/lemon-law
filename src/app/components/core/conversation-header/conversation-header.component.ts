@@ -8,7 +8,7 @@ import { AppService } from 'src/app/app.service';
 })
 export class ConversationHeaderComponent implements OnInit {
 
-  @Output() goBackEvent = new EventEmitter();
+  @Output() back = new EventEmitter();
 
   public countdownFormatted: string;
   public timer;
@@ -17,7 +17,7 @@ export class ConversationHeaderComponent implements OnInit {
   constructor(private appService: AppService) { }
 
   ngOnInit(): void {
-    this.countdown = new Date('2020-08-17 03:24:00');
+    this.countdown = new Date('2020-08-22 03:24:00');
     this.timer = setInterval(() => {
       let distance = this.countdown.getTime() - new Date().getTime();
 
@@ -25,8 +25,8 @@ export class ConversationHeaderComponent implements OnInit {
         clearInterval(this.timer);
         return;
       }
-  
-      var ms = distance % 1000;
+
+      const ms = distance % 1000;
       distance = (distance - ms) / 1000;
       this.countdownFormatted = this.appService.addZero(distance % 60);
       distance = (distance - distance % 60) / 60;
@@ -35,15 +35,15 @@ export class ConversationHeaderComponent implements OnInit {
     }, 1000);
   }
 
-  public applyLemonLaw() {
+  public applyLemonLaw(): void {
 
   }
 
-  public goBack() {
-    this.goBackEvent.emit();
+  public goBack(): void {
+    this.back.emit();
   }
 
-  public showHelpTooltip() {
+  public showHelpTooltip(): void {
 
   }
 

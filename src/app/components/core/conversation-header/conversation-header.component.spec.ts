@@ -1,17 +1,17 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { ConversationHeaderComponent } from './conversation-header.component';
 
-describe('HeaderComponent', () => {
+describe('ConversationHeaderComponent', () => {
   let component: ConversationHeaderComponent;
   let fixture: ComponentFixture<ConversationHeaderComponent>;
 
-  beforeEach(async(() => {
-    TestBed.configureTestingModule({
+  beforeEach(async () => {
+    await TestBed.configureTestingModule({
       declarations: [ ConversationHeaderComponent ]
     })
     .compileComponents();
-  }));
+  });
 
   beforeEach(() => {
     fixture = TestBed.createComponent(ConversationHeaderComponent);

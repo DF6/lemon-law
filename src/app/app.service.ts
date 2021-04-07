@@ -1,13 +1,15 @@
 import { Injectable } from '@angular/core';
 
-@Injectable()
-
+@Injectable({
+  providedIn: 'root'
+})
 export class AppService {
 
-    constructor() {}
+  constructor() { }
 
-    public addZero(number) {
-        return number < 10 ? '0' + number : number;
-    }
+  public addZero(num: number): string {
+    const ret: string = num < 10 ? '0' + num : '' + num;
+    return ret;
+  }
 
 }

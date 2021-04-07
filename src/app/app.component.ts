@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { ConversationHeaderComponent } from 'src/app/components/conversation-header/conversation-header.component';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-root',
@@ -8,10 +8,8 @@ import { ConversationHeaderComponent } from 'src/app/components/conversation-hea
 })
 export class AppComponent {
 
-  public countdown;
-  title = 'lemon-law';
-
-  constructor() {
-    this.countdown = new Date();
+  constructor(private translate: TranslateService) {
+    this.translate.setDefaultLang('es');
   }
+
 }
